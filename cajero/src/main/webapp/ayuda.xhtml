@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      lang="es">
+<h:head>
+    <meta charset="UTF-8" />
+    <title>Cajero Automático: Pantalla de Ayuda</title>
+    <h:outputStylesheet library="css" name="estilo.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            margin: 40px;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        h2, h3 {
+            color: #ffffff;
+            text-align: center;
+        }
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .student-table th, .student-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        .student-table th {
+            background-color: #1e90ff;
+            color: #ffffff;
+        }
+        .student-table tr:nth-child(even) {
+            background-color: #333333;
+        }
+        .student-table tr:hover {
+            background-color: #3c3c3c;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</h:head>
+<h:body>
+    <div class="container">
+        <h:form>
+            <h2>Pantalla de Ayuda - Cajero Automático</h2>
+            <h3>Información del Grupo #5</h3>
+            <h:panelGrid columns="2" cellpadding="5">
+            </h:panelGrid>
+            <h3>Estudiantes</h3>
+            <table class="student-table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Numero de Cuenta </th>
+
+                </tr>
+                <tr>
+                    <td>Meilyn Lisbet Castillo Juanez</td>
+                    <td>202310060207</td>
+
+                </tr>
+                <tr>
+                    <td>Santiago Johnatan Chavarria Cruz</td>
+                    <td>202210110208</td>
+
+                </tr>
+                <tr>
+                    <td>Skarleth Rodríguez Mejía</td>
+                    <td>201330060004</td>
+
+                </tr>
+            </table>
+
+            <h:link value="Volver al Inicio" outcome="inicio" styleClass="back-link" />
+        </h:form>
+    </div>
+</h:body>
+</html>

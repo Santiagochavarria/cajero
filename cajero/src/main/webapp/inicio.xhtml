@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      lang="en">
+<h:head>
+  <meta charset="UTF-8" />
+  <title>Cajero Automático: Inicio</title>
+  <h:outputStylesheet library="css" name="estilo.css" />
+</h:head>
+<h:body>
+  <h:form>
+    <h2>Bienvenido al Cajero Automático</h2>
+    <p>Seleccione una operación:</p>
+    <h:panelGrid columns="1" cellpadding="5">
+      <h:link value="Realizar Depósito" outcome="deposito" />
+      <h:link value="Realizar Retiro" outcome="retiro" />
+      <h:link value="Ayuda" outcome="ayuda" />
+    </h:panelGrid>
+  </h:form>
+</h:body>
+</html>

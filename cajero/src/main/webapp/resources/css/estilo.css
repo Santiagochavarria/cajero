@@ -1,0 +1,139 @@
+body {
+    background-color: #1c2526;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+form {
+    background: linear-gradient(135deg, #2e3b3e, #3a4b4e);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border: 1px solid #4a5f63;
+}
+
+h2 {
+    text-align: center;
+    color: #00ccff;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 3px rgba(0, 204, 255, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #b0c4de;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #4a5f63;
+    border-radius: 5px;
+    background-color: #3a4b4e;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #00ccff;
+    box-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
+    outline: none;
+}
+
+button {
+    background: linear-gradient(135deg, #00ccff, #0099ff);
+    color: #1c2526;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00aaff, #0077cc);
+    transform: translateY(-2px);
+}
+
+span {
+    text-align: center;
+    margin-top: 10px;
+    color: #ff4d4d;
+    font-weight: bold;
+    display: block;
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: #00ccff;
+    text-decoration: none;
+    padding: 10px;
+    background: linear-gradient(135deg, #3a4b4e, #4a5f63);
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background: linear-gradient(135deg, #4a5f63, #5a6f73);
+    transform: translateY(-2px);
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b0c4de;
+}
+
+.exito {
+    color: green;
+    font-weight: bold;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+.advertencia {
+    color: orange;
+    font-weight: bold;
+}
+
+.buttonStyle {
+    background: linear-gradient(135deg, #00ccff, #0099ff);
+    color: #1c2526;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buttonStyle:hover {
+    background: linear-gradient(135deg, #00aaff, #0077cc);
+    transform: translateY(-2px);
+}

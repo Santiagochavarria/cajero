@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      lang="en">
+<h:head>
+  <meta charset="UTF-8" />
+  <title>Cajero Automático: Retiro</title>
+  <h:outputStylesheet library="css" name="estilo.css" />
+</h:head>
+<h:body>
+  <f:metadata><f:viewAction action="#{cajeroBean.resetearValores}" /></f:metadata>
+  <h:form>
+    <h2>Formulario de Retiro</h2>
+    <h:panelGrid columns="2" cellpadding="5">
+      <h:outputLabel value="Numero de Cuenta:" />
+      <h:inputText value="#{cajeroBean.numeroCuenta}" />
+      <h:outputLabel value="PIN:" />
+      <h:inputSecret value="#{cajeroBean.pinIngresado}" />
+      <h:outputLabel value="Monto a retirar:" />
+      <h:inputText value="#{cajeroBean.monto}" />
+      <h:link value="Volver al Inicio" outcome="inicio" />
+      <h:commandButton styleClass="buttonStyle" value="Retirar" action="#{cajeroBean.realizarRetiro}" />
+    </h:panelGrid>
+    <br/>
+    <h:outputText value="#{cajeroBean.mensaje}" styleClass="#{cajeroBean.mensajeStyleClass}" />
+  </h:form>
+</h:body>
+</html>
